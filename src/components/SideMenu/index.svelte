@@ -20,22 +20,7 @@
 		faGear,
 		faHeadset,
 		faUserGear,
-		faShield,
-		faChevronRight,
-		faChevronDown,
-		faMapLocationDot,
-		faCalendarDays,
-		faCalendarPlus,
-		faCubesStacked,
-		faRightFromBracket,
-		faUsers,
-		faUserFriends,
-		faRetweet,
-		faRocket,
-		faFingerprint,
-		faMedal,
-		faPoll,
-		faLightbulb
+		faShield
 	} from '@fortawesome/free-solid-svg-icons';
 	import { base } from '$app/paths';
 

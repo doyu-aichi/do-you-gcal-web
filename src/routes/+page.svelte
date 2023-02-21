@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { Grid, Row, Column, Tile, ImageLoader } from 'carbon-components-svelte';
+</script>
+
 <svelte:head>
 	<title>Do You Gcalサポートサイト</title>
 	<meta name="description" content="Do You Gcal" />
@@ -16,5 +20,32 @@
 				>こちら</a
 			>から
 		</p>
+		<div />
+		<Grid fullWidth>
+			<Row
+				><Column aspectRatio="2x1">
+					<Tile light>
+						<ImageLoader
+							class="rounded-lg shadow shadow-md"
+							fadeIn
+							src="/screen_01.jpg"
+							alt="スクリーン"
+						/></Tile
+					></Column
+				><Column aspectRatio="2x1" />
+			</Row><Row
+				><Column
+					><h2>利用方法</h2>
+					<p>
+						インストールすると<strong>あいどる</strong
+						>ポータル上のカレンダーページを開いた際、右上に<strong>あ</strong
+						>のアイコンタブが出現します。<br />
+						リストからGoogleカレンダーに登録したいイベントの赤いボタンをクリックするとGoogleカレンダーにイベントが登録されます。<br
+						/>
+						なお、ChromeでGoogleアカウントにログインしている必要があります。
+					</p></Column
+				></Row
+			>
+		</Grid>
 	</div>
 </div>
