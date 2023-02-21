@@ -1,20 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import 'carbon-components-svelte/css/g10.css';
-	import {
-		Header,
-		HeaderUtilities,
-		HeaderAction,
-		HeaderGlobalAction,
-		HeaderPanelLinks,
-		HeaderPanelDivider,
-		HeaderPanelLink,
-		SkipToContent,
-		Content,
-		Grid,
-		Row,
-		Column
-	} from 'carbon-components-svelte';
+	import { Header, SkipToContent, Content, Grid, Row, Column } from 'carbon-components-svelte';
 	import Footer from '$components/Footer.svelte';
 	import SettingsAdjust from 'carbon-icons-svelte/lib/SettingsAdjust.svelte';
 	import UserAvatarFilledAlt from 'carbon-icons-svelte/lib/UserAvatarFilledAlt.svelte';
