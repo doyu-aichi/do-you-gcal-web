@@ -11,14 +11,23 @@
 			製作者と連絡を取りたい方はChromeウェブストアのページから<a
 				href="https://chrome.google.com/webstore/detail/do-you-gcal/nhgpinmgbpglndjkllhbcjcljbenjbgm?hl=ja&authuser=0"
 				>デベロッパーにお問い合わせ</a
-			>ください。
+			>ください。現在の開発版はv0.3.1です。
 		</p>
 
 		<h2 class="p-5">FAQ</h2>
 		<ol class="pl-6 list-decimal list-inside">
 			<li class="">
+				なんのための拡張機能ですか？<br />
+				<p class="p-3 text-sm text-blue-600">
+					Googleカレンダーと連携できない<strong>あいどる</strong
+					>のスケジュールをいちいち手作業でコピペしてGoogleカレンダーに登録しなくてよくするためのものです。
+				</p>
+			</li>
+			<li class="">
 				画面上のイベントが拡張画面に反映されないときがあります<br />
-				<p class="p-3 text-sm text-blue-600">表示が崩れるなどの場合含めてリロードしてください</p>
+				<p class="p-3 text-sm text-blue-600">
+					表示が崩れるなどの場合含めてまずはリロードしてください
+				</p>
 			</li>
 			<li class="">
 				Google カレンダー上の変更は<strong>あいどる</strong>に反映されますか？<br />
@@ -28,7 +37,8 @@
 				<strong>あいどる</strong
 				>上でイベント情報が変更された場合、自動的にGoogleカレンダーに反映されますか？<br />
 				<p class="p-3 text-sm text-blue-600">
-					されません。そもそも「あいどる」はCalDAV機能を実装しておらず、双方向での情報更新が不可能です。
+					されません。そもそも<strong>あいどる</strong
+					>はCalDAV機能を実装しておらず、双方向での情報更新が不可能です。そもそもCalDAV機能が実装されていれば、このChrome拡張を作成する必要はありませんでした。
 				</p>
 			</li>
 		</ol>
