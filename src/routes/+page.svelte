@@ -18,7 +18,9 @@
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				>こちら</a
-			>から
+			>から。バージョン0.3.0以上をご利用ください<small
+				>（Chromeウェブストアは更新登録に時間がかかりますのでお待ち下さい）</small
+			>
 		</p>
 		<div />
 		<Grid fullWidth>
@@ -100,5 +102,8 @@
 		margin: 0 0.3em 0 0;
 		padding: 0;
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+	}
+	small {
+		font-size: small;
 	}
 </style>

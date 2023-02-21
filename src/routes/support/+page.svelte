@@ -6,7 +6,12 @@
 	<div class="mb-4 grid grid-flow-row-dense grid-cols-1">
 		<h1>サポート情報</h1>
 		<p class="p-4">
-			Googleカレンダー上で新規にカレンダーを「同友会」などの名前で作成し、そちらに機能拡張からカレンダーイベントをポストするのがおすすめです。
+			Googleカレンダー上で新規にカレンダーを「同友会」などの名前で作成し、そちらに機能拡張からカレンダーイベントをポストするのがおすすめです。<br
+			/>
+			製作者と連絡を取りたい方はChromeウェブストアのページから<a
+				href="https://chrome.google.com/webstore/detail/do-you-gcal/nhgpinmgbpglndjkllhbcjcljbenjbgm?hl=ja&authuser=0"
+				>デベロッパーにお問い合わせ</a
+			>ください。
 		</p>
 
 		<h2 class="p-5">FAQ</h2>
