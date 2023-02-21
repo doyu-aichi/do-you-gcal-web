@@ -5,6 +5,9 @@
 <div class="p-4 m-4">
 	<div class="mb-4 grid grid-flow-row-dense grid-cols-1">
 		<h1>サポート情報</h1>
+		<p class="p-4">
+			Googleカレンダー上で新規にカレンダーを「同友会」などの名前で作成し、そちらに機能拡張からカレンダーイベントをポストするのがおすすめです。
+		</p>
 
 		<h2 class="p-5">FAQ</h2>
 		<ol class="pl-6 list-decimal list-inside">

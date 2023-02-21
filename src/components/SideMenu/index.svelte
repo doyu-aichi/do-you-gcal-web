@@ -18,6 +18,7 @@
 		faHouse,
 		faHandSparkles,
 		faGear,
+		faHeadset,
 		faUserGear,
 		faShield,
 		faChevronRight,
@@ -58,12 +59,12 @@
 		</SideNavLink>
 		<SideNavLink href="{base}/support" text="サポート"
 			><svelte:fragment slot="icon">
-				<Fa icon={faCalendarDays} />
+				<Fa icon={faHeadset} />
 			</svelte:fragment>
 		</SideNavLink>
 		<SideNavLink href="{base}/privacy" text="プライバシー"
 			><svelte:fragment slot="icon">
-				<Fa icon={faCalendarDays} />
+				<Fa icon={faShield} />
 			</svelte:fragment>
 		</SideNavLink>
 	</SideNavItems>
