@@ -22,6 +22,11 @@
 			>から。バージョン0.3.0以上をご利用ください<small
 				>（Chromeウェブストアは更新登録に時間がかかりますのでお待ち下さい）</small
 			>
+			<a
+				class="block m-4"
+				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
+				><img src="/store_budge_s.png" /></a
+			>
 		</p>
 		<div />
 		<Grid fullWidth>
