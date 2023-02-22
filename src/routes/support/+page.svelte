@@ -21,38 +21,40 @@
 
 		<h2 class="p-5">FAQ</h2>
 		<ol class="pl-6 list-decimal list-inside">
-			<li class="">
+			<li class="pb-2">
 				なんのための拡張機能ですか？<br />
-				<p class="p-3 text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-600">
 					Googleカレンダーと連携できない<strong>あいどる</strong
 					>のスケジュールをいちいち手作業でコピペしてGoogleカレンダーに登録しなくてよくするためのものです。
 				</p>
 			</li>
-			<li class="">
+			<li class="pb-2">
 				画面上のイベントが拡張画面に反映されないときがあります<br />
-				<p class="p-3 text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">
 					表示が崩れるなどの場合含めてまずはリロードしてください
 				</p>
 			</li>
-			<li class="">
+			<li class="pb-2">
 				Google カレンダー上の変更は<strong>あいどる</strong>に反映されますか？<br />
-				<p class="p-3 text-sm text-blue-600">されません</p>
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">されません</p>
 			</li>
-			<li class="">
+			<li class="pb-2">
 				<strong>あいどる</strong
 				>上でイベント情報が変更された場合、自動的にGoogleカレンダーに反映されますか？<br />
-				<p class="p-3 text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">
 					されません。そもそも<strong>あいどる</strong
 					>はCalDAV機能を実装しておらず、双方向での情報更新が不可能です。そもそもCalDAV機能が実装されていれば、このChrome拡張を作成する必要はありませんでした。
 				</p>
 			</li>
-			<li class="">
+			<li class="pb-2">
 				脆弱性はありませんか？セキュリティは大丈夫ですか？<br />
-				<p class="p-3 text-sm text-blue-600">大丈夫です。心配な方はご利用にならないでください。</p>
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">
+					大丈夫です。心配な方はご利用にならないでください。
+				</p>
 			</li>
-			<li class="">
+			<li class="pb-2">
 				他のサイトでも利用できませんか？<br />
-				<p class="p-3 text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-600">
 					できません。<strong>あいどる</strong
 					>上でのみ有効になる設定になっています。改造すれば他のサイトでも利用可能です。
 				</p>
@@ -69,5 +71,14 @@
 <style>
 	li::before {
 		font-size: larger;
+	}
+	li {
+		text-indent: -1rem;
+		margin-left: 1rem;
+		line-height: 1.1rem;
+	}
+	li > p {
+		text-indent: 0;
+		margin-left: 0rem;
 	}
 </style>

@@ -31,7 +31,6 @@
 
 	// Props
 	export let embedded = false;
-
 	export let isSideNavOpen: boolean;
 </script>
 

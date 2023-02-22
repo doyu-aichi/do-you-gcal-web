@@ -115,6 +115,13 @@
 	:global(.bx--side-nav.bx--side-nav--collapsed ~ .bx--content) {
 		margin-left: 0 !important;
 	}
+
+	@media screen and (max-width: 480px) {
+		:global(.bx--content) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 	@keyframes hidemenu {
 		0% {
 			transform: translateX(0);

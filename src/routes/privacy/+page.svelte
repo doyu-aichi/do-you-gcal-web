@@ -196,4 +196,7 @@
 		line-height: 1.2rem;
 		text-indent: -1em;
 	}
+	h4 {
+		font-size: large;
+	}
 </style>
