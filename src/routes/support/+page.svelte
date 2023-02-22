@@ -41,6 +41,17 @@
 					>はCalDAV機能を実装しておらず、双方向での情報更新が不可能です。そもそもCalDAV機能が実装されていれば、このChrome拡張を作成する必要はありませんでした。
 				</p>
 			</li>
+			<li class="">
+				脆弱性はありませんか？セキュリティは大丈夫ですか？<br />
+				<p class="p-3 text-sm text-blue-600">大丈夫です。心配な方はご利用にならないでください。</p>
+			</li>
+			<li class="">
+				他のサイトでも利用できませんか？<br />
+				<p class="p-3 text-sm text-blue-600">
+					できません。<strong>あいどる</strong
+					>上でのみ有効になる設定になっています。改造すれば他のサイトでも利用可能です。
+				</p>
+			</li>
 		</ol>
 		<h2 class="p-5">TODO</h2>
 		<ol class="pl-6 list-decimal list-inside">
