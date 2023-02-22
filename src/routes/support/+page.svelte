@@ -42,6 +42,10 @@
 				</p>
 			</li>
 		</ol>
+		<h2 class="p-5">TODO</h2>
+		<ol class="pl-6 list-decimal list-inside">
+			<li class="">一括でイベントに対する出欠席をバックグラウンド取得して画面に反映</li>
+		</ol>
 	</div>
 </div>
 
