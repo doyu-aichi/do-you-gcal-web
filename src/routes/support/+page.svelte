@@ -15,7 +15,8 @@
 			製作者と連絡を取りたい方はChromeウェブストアのページから<a
 				href="https://chrome.google.com/webstore/detail/do-you-gcal/nhgpinmgbpglndjkllhbcjcljbenjbgm?hl=ja&authuser=0"
 				>デベロッパーにお問い合わせ</a
-			>ください。現在の開発版はv0.3.1です。
+			>ください。現在の開発版はv0.3.1です。Chrome バージョン 109.0.5414.119（Official
+			Build）で動作確認済みです。
 		</p>
 
 		<h2 class="p-5">FAQ</h2>
