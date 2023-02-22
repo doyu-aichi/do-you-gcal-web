@@ -31,16 +31,17 @@
 		<div />
 		<Grid fullWidth>
 			<Row
-				><Column aspectRatio="2x1">
+				><Column>
 					<Tile light>
 						<ImageLoader
 							class="rounded-lg shadow shadow-md"
 							fadeIn
 							src="/screen_01.jpg"
+							style="max-width: 60vh;margin: 0 auto;"
 							alt="スクリーン"
 						/></Tile
 					></Column
-				><Column aspectRatio="2x1" />
+				>
 			</Row><Row
 				><Column
 					><h2>利用方法</h2>
