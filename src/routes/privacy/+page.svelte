@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Do You Gcalサポートサイト | プライバシーポリシー</title>
+	<meta name="description" content="Do You Gcal" />
+</svelte:head>
 <div class="p-4 m-4">
 	<div class="mb-4 grid grid-flow-row-dense grid-cols-1">
 		<h1 class="title">プライバシーポリシー</h1>

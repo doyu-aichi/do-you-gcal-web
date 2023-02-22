@@ -2,6 +2,10 @@
 	import { Grid, Row, Column } from 'carbon-components-svelte';
 </script>
 
+<svelte:head>
+	<title>Do You Gcalサポートサイト | サポートページ</title>
+	<meta name="description" content="Do You Gcal" />
+</svelte:head>
 <div class="p-4 m-4">
 	<div class="mb-4 grid grid-flow-row-dense grid-cols-1">
 		<h1>サポート情報</h1>
