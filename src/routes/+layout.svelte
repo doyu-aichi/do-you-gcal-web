@@ -33,7 +33,7 @@
 	platformName="Do You Gcal サポートサイト"
 	bind:isSideNavOpen
 	persistentHamburgerMenu={true}
-	class="items-center align-middle"
+	class="items-center align-middle logo-header"
 >
 	<svelte:fragment slot="skip-to-content">
 		<SkipToContent />
@@ -54,6 +54,14 @@
 <style>
 	:global(.bx--header__action > svg) {
 		display: inline !important;
+	}
+	:global(.logo-header) {
+		white-space: nowrap;
+		margin-bottom: 0.2rem;
+	}
+	:global(.logo-header > span) {
+		white-space: nowrap;
+		margin-bottom: 0.2rem;
 	}
 	:global(a) {
 		text-decoration: none !important;

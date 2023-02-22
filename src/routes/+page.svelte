@@ -6,9 +6,9 @@
 	<title>Do You Gcalサポートサイト</title>
 	<meta name="description" content="Do You Gcal" />
 </svelte:head>
-<div class="p-4 m-4 ">
-	<div class="mb-4 grid grid-flow-row-dense grid-cols-1">
-		<h1 class="block">Do You Gcalサポートサイト</h1>
+<div class="lg:p-4 lg:m-4 sm:m-0 sm:p-0">
+	<div class="md:mb-4 sm:mb-0 grid grid-flow-row-dense grid-cols-1">
+		<h1 class="block lg:text-xl md:text-lg sm:text-xs">Do You Gcalサポートサイト</h1>
 		<p class="p-4">
 			愛知県中小企業同友会のポータルサイト、あいどるのカレンダー機能を補完しGoogleカレンダー連携を行うChrome拡張、<strong
 				>Do You Gcal</strong
