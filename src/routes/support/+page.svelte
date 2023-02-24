@@ -61,9 +61,18 @@
 		</ol>
 		<h2 class="p-5">TODO</h2>
 		<ol class="pl-6 list-decimal list-inside">
+			<li class="">同友会イベントのフィルタリング機能</li>
 			<li class="">一括でイベントに対する出欠席をバックグラウンド取得して画面に反映</li>
 			<li class="">拡張機能またはカレンダーからの出欠操作</li>
 		</ol>
+
+		<h2 class="p-5">更新履歴</h2>
+		<ul class="pl-6 list-none list-inside">
+			<li class="version">
+				<strong>v0.4.0</strong>2024-02-24 Google認証エラー対応<br />開発環境と同じテスト用OAuth
+				Client IDを利用していた
+			</li>
+		</ul>
 	</div>
 </div>
 
@@ -79,5 +88,13 @@
 	li > p {
 		text-indent: 0;
 		margin-left: 0rem;
+	}
+	li.version > strong {
+		padding-right: 1rem;
+	}
+	li.version {
+		text-indent: -4em;
+		margin-left: 4em;
+		line-height: 1.2rem;
 	}
 </style>
