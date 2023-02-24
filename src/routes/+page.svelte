@@ -19,7 +19,7 @@
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				>こちら</a
-			>から。バージョン0.3.10以上をご利用ください<small
+			>から。バージョン0.4.0以上をご利用ください<small
 				>（Chromeウェブストアは更新登録に時間がかかりますのでお待ち下さい）</small
 			>
 			<a
