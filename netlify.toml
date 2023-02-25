@@ -19,3 +19,8 @@
   from = "/*"
   status = 200
   to = "/.netlify/functions/render"
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "build/"
