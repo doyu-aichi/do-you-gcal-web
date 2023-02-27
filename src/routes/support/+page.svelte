@@ -73,7 +73,7 @@
 			</li><li class="version">
 				<strong>v0.4.4</strong>2024-02-25 データフォーマット修正
 			</li><li class="version">
-				<strong>v0.4.3</strong>2024-02-24 データテーブル化
+				<strong>v0.4.3</strong>2024-02-25 データテーブル化 フィルタ機能
 			</li><li class="version">
 				<strong>v0.4.2</strong>2024-02-25 組織図ツリー、Carbon Layout 導入
 			</li><li class="version">
