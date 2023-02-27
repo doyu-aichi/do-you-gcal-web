@@ -59,15 +59,26 @@
 				</p>
 			</li>
 		</ol>
-		<h2 class="p-5">TODO</h2>
+		<h2 class="p-5">TODO<span class="text-sm pl-4">追加予定機能</span></h2>
+		
+		
 		<ol class="pl-6 list-decimal list-inside">
-			<li class="">同友会イベントのフィルタリング機能</li>
-			<li class="">一括でイベントに対する出欠席をバックグラウンド取得して画面に反映</li>
 			<li class="">拡張機能またはカレンダーからの出欠操作</li>
 		</ol>
 
 		<h2 class="p-5">更新履歴</h2>
 		<ul class="pl-6 list-none list-inside">
+			<li class="version">
+				<strong>v0.4.5</strong>2024-02-25 レイアウト・デザイン修正
+			</li><li class="version">
+				<strong>v0.4.4</strong>2024-02-25 データフォーマット修正
+			</li><li class="version">
+				<strong>v0.4.3</strong>2024-02-24 データテーブル化
+			</li><li class="version">
+				<strong>v0.4.2</strong>2024-02-25 組織図ツリー、Carbon Layout 導入
+			</li><li class="version">
+				<strong>v0.4.1</strong>2024-02-24 終日イベントへの対応、取得中の割り込み禁止対応
+			</li>
 			<li class="version">
 				<strong>v0.4.0</strong>2024-02-24 Google認証エラー対応<br />開発環境と同じテスト用OAuth
 				Client IDを利用していた

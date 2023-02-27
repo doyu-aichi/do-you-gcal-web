@@ -1,5 +1,4 @@
 <script lang="ts">
-	export const prerender = true;
 	import '../app.postcss';
 	import 'carbon-components-svelte/css/g10.css';
 	import { Header, SkipToContent, Content, Grid, Row, Column } from 'carbon-components-svelte';

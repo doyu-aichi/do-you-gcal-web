@@ -19,8 +19,8 @@
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				>こちら</a
-			>から。バージョン0.4.0以上をご利用ください<small
-				>（Chromeウェブストアは更新登録に時間がかかりますのでお待ち下さい）</small
+			>から。バージョン0.4.5以上をご利用ください。アプリケーションの認証が完了していないので警告が出ますが、Advancedからインストール可能です。認証完了はもう少し時間かかりそうです。<small
+				>（最新版のChromeウェブストアは更新登録に時間がかかりますのでお待ち下さい）</small
 			>
 			<a
 				class="block m-4"
