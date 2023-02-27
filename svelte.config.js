@@ -14,7 +14,13 @@ const config = {
 	kit: {
 		adapter: adapter({
 			edge: false,
-		})
+		}),
+		prerender: {
+			crawl: true,
+			enabled: true,
+			onError: 'continue',
+			pages: ['*'],
+		},
 	},
 	outDir: "build"
 };
