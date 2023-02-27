@@ -18,7 +18,7 @@ const config = {
 		prerender: {
 			crawl: true,
 			entries: ['*'],
-			handleHttpError: 'continue',
+			handleHttpError: 'warn',
 		},
 	},
 	outDir: "build"
