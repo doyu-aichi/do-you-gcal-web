@@ -17,9 +17,8 @@ const config = {
 		}),
 		prerender: {
 			crawl: true,
-			enabled: true,
-			onError: 'continue',
-			pages: ['*'],
+			entries: ['*'],
+			handleHttpError: 'continue',
 		},
 	},
 	outDir: "build"
