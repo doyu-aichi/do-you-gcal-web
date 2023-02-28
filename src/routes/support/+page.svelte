@@ -63,7 +63,8 @@
 		
 		
 		<ol class="pl-6 list-decimal list-inside">
-			<li class="">拡張機能またはカレンダーからの出欠操作</li>
+			<li class="">拡張機能またはカレンダーからの直接の出欠操作</li>
+			<li class="">Microsoft Edge対応（気が向いたら）</li>
 		</ol>
 
 		<h2 class="p-5">更新履歴</h2>
