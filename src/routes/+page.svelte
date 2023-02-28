@@ -19,7 +19,8 @@
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				>こちら</a
-			>から。バージョン0.4.5以上をご利用ください。アプリケーションの認証が完了していないので警告が出ますが、Advancedからインストール可能です。認証完了はもう少し時間かかりそうです。<small
+			>から。バージョン0.4.5以上をご利用ください。アプリケーションの認証が完了していない場合、警告が出ますが、左下Advancedからインストール可能です。<br/>
+			ご心配な方は認証完了までお待ち下さい。もう少し時間かかりそうです。<small
 				>（最新版のChromeウェブストアは更新登録に時間がかかりますのでお待ち下さい）</small
 			>
 			<a
@@ -74,11 +75,28 @@
 					</p></Column
 				></Row
 			>
+			<Row
+			><Column
+				><h2 class="pt-4">利用規約</h2>
+				<p class="leading-8">
+					特にありません。無料でご利用いただけます。<br/>
+					あいどるに負荷がかからない配慮をしていますが、同友会事務局から正当な理由による公開差止めなどの要請があった場合は公開は中止します。<br/>
+					モチベーション維持のための寄付やプレゼントは歓迎します。<a href="https://www.amazon.jp/hz/wishlist/ls/3VZ6OX6U7SG2R?ref_=wl_share">Amazon 欲しい物リスト</a>
+				</p></Column
+			></Row
+		>
 		</Grid>
 	</div>
 </div>
 
 <style>
+	h1 {
+
+		font-size:xx-large;
+	}
+	h2 {
+		font-size:x-large;
+	}
 	button.detail {
 		position: relative;
 		fill: #1f90a7;
