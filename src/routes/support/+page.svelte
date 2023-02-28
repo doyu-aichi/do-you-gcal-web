@@ -30,7 +30,7 @@
 			<li class="pb-2">
 				画面上のイベントが拡張画面に反映されないときがあります<br />
 				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">
-					表示が崩れるなどの場合含めてまずはリロードしてください
+					表示が崩れるなどの場合含め、まずはリロードしてみてください
 				</p>
 			</li>
 			<li class="pb-2">
@@ -61,14 +61,21 @@
 		</ol>
 		<h2 class="p-5">TODO<span class="text-sm pl-4">追加予定機能</span></h2>
 		
+		<p class="p-4">自身の必要とする機能は概ね実装済みなのでモチベーションは低めです。<br/>
+			所属組織、資料保管庫の一覧性の悪さに耐えきれなくなったら、なんとかするかもしれません。
+		</p>
 		
 		<ol class="pl-6 list-decimal list-inside">
-			<li class="">拡張機能またはカレンダーからの直接の出欠操作</li>
-			<li class="">Microsoft Edge対応（気が向いたら）</li>
+			<li class="">拡張機能またはカレンダーからの直接の出欠操作（モチベーション 30/100）</li>
+			<li class="">Microsoft Edge対応（モチベーション 10/100）</li>
+			<li class="">Outlook カレンダー対応（モチベーション 5/100）</li>
 		</ol>
 
 		<h2 class="p-5">更新履歴</h2>
 		<ul class="pl-6 list-none list-inside">
+			<li class="version">
+			<strong>v0.4.6</strong>2024-02-27 Google API利用認証対応
+		</li>
 			<li class="version">
 				<strong>v0.4.5</strong>2024-02-25 レイアウト・デザイン修正
 			</li><li class="version">
@@ -109,4 +116,7 @@
 		margin-left: 4em;
 		line-height: 1.2rem;
 	}
+	li {
+    padding: 0 0 0.4em;
+}
 </style>
