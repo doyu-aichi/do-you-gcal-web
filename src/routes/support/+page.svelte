@@ -28,6 +28,12 @@
 				</p>
 			</li>
 			<li class="pb-2">
+				スマートフォンに対応していますか？<br />
+				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-600">
+					してません。Chrome拡張機能がPC版のChromeにしか対応していません。
+				</p>
+			</li>
+			<li class="pb-2">
 				画面上のイベントが拡張画面に反映されないときがあります<br />
 				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">
 					表示が崩れるなどの場合含め、まずはリロードしてみてください
@@ -68,7 +74,8 @@
 		<ol class="pl-6 list-decimal list-inside">
 			<li class="">拡張機能またはカレンダーからの直接の出欠操作（モチベーション 30/100）</li>
 			<li class="">Microsoft Edge対応（モチベーション 10/100）</li>
-			<li class="">Outlook カレンダー対応（モチベーション 5/100）</li>
+			<li class="">Outlook カレンダー連携（モチベーション 5/100）</li>
+			<li class="">iCloud カレンダー連携（モチベーション 5/100）</li>
 		</ol>
 
 		<h2 class="p-5">更新履歴</h2>
@@ -88,8 +95,7 @@
 				<strong>v0.4.1</strong>2024-02-24 終日イベントへの対応、取得中の割り込み禁止対応
 			</li>
 			<li class="version">
-				<strong>v0.4.0</strong>2024-02-24 Google認証エラー対応<br />開発環境と同じテスト用OAuth
-				Client IDを利用していた
+				<strong>v0.4.0</strong>2024-02-24 Google認証エラー対応
 			</li>
 		</ul>
 	</div>

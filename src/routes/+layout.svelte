@@ -1,11 +1,30 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import '../app.postcss';
 	import 'carbon-components-svelte/css/g10.css';
-	import { Header, SkipToContent, Content, Grid, Row, Column } from 'carbon-components-svelte';
+	import Fa from 'svelte-fa';
+	import {
+		faEnvelope,
+		faHouse,
+		faHandSparkles,
+		faGear,
+		faHeadset,
+		faUserGear,
+		faShield
+	} from '@fortawesome/free-solid-svg-icons';
+	import { Header,
+		HeaderNav,
+		HeaderNavMenu,
+		HeaderNavItem, SideNav,
+    SideNavItems,
+    SideNavMenu,
+    SideNavMenuItem,
+    SideNavLink,
+    SideNavDivider,
+    SkipToContent, Content, Grid, Row, Column } from 'carbon-components-svelte';
 	import Footer from '$components/Footer.svelte';
 	import SettingsAdjust from 'carbon-icons-svelte/lib/SettingsAdjust.svelte';
 	import UserAvatarFilledAlt from 'carbon-icons-svelte/lib/UserAvatarFilledAlt.svelte';
-	import SideMenu from '$components/SideMenu/index.svelte';
 	import { navigating } from '$app/stores';
 	import { onMount } from 'svelte';
 	import type { LayoutServerData } from './$types';
@@ -28,17 +47,35 @@
 	</script>
 </svelte:head>
 <Header
+	href="/"
 	company="カイズ電気"
 	platformName="Do You Gcal サポートサイト"
 	bind:isSideNavOpen
-	persistentHamburgerMenu={true}
 	class="items-center align-middle logo-header"
 >
 	<svelte:fragment slot="skip-to-content">
 		<SkipToContent />
 	</svelte:fragment>
+	<HeaderNav>
+		<HeaderNavItem href="/support" text="サポート" />
+		<HeaderNavItem href="/privacy" text="プライバシー" />
+		</HeaderNav
+	>
 </Header>
-<SideMenu bind:isSideNavOpen />
+<SideNav bind:isOpen={isSideNavOpen} rail>
+	<SideNavItems>
+		<SideNavLink href="{base}/support" text="サポート"
+			><svelte:fragment slot="icon">
+				<Fa icon={faHeadset} />
+			</svelte:fragment>
+		</SideNavLink>
+		<SideNavLink href="{base}/privacy" text="プライバシー"
+			><svelte:fragment slot="icon">
+				<Fa icon={faShield} />
+			</svelte:fragment>
+		</SideNavLink>
+	</SideNavItems>
+</SideNav>
 <Content>
 	<Grid>
 		<Row>
