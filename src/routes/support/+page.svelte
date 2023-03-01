@@ -1,5 +1,7 @@
 <script lang="ts">
-	import { Grid, Row, Column } from 'carbon-components-svelte';
+	import { Grid, Row, Column, Link,
+ } from 'carbon-components-svelte';
+  import Launch from 'carbon-icons-svelte/lib/Launch.svelte';
 </script>
 
 <svelte:head>
@@ -22,46 +24,46 @@
 		<ol class="pl-6 list-decimal list-inside">
 			<li class="pb-2">
 				なんのための拡張機能ですか？<br />
-				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-800">
 					Googleカレンダーと連携できない<strong>あいどる</strong
 					>のスケジュールをいちいち手作業でコピペしてGoogleカレンダーに登録しなくてよくするためのものです。
 				</p>
 			</li>
 			<li class="pb-2">
 				スマートフォンに対応していますか？<br />
-				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-600">
-					してません。Chrome拡張機能がPC版のChromeにしか対応していません。
+				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-800">
+					してません。Chrome拡張機能がモバイル版Chromeに対応していないので対応予定もありません。
 				</p>
 			</li>
 			<li class="pb-2">
 				画面上のイベントが拡張画面に反映されないときがあります<br />
-				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-800">
 					表示が崩れるなどの場合含め、まずはリロードしてみてください
 				</p>
 			</li>
 			<li class="pb-2">
 				Google カレンダー上の変更は<strong>あいどる</strong>に反映されますか？<br />
-				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">されません</p>
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-800">されません</p>
 			</li>
 			<li class="pb-2">
 				<strong>あいどる</strong
 				>上でイベント情報が変更された場合、自動的にGoogleカレンダーに反映されますか？<br />
-				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-800">
 					されません。そもそも<strong>あいどる</strong
 					>はCalDAV機能を実装しておらず、双方向での情報更新が不可能です。そもそもCalDAV機能が実装されていれば、このChrome拡張を作成する必要はありませんでした。
 				</p>
 			</li>
 			<li class="pb-2">
 				脆弱性はありませんか？セキュリティは大丈夫ですか？<br />
-				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-800">
 					大丈夫です。心配な方はご利用にならないでください。
 				</p>
 			</li>
 			<li class="pb-2">
 				他のサイトでも利用できませんか？<br />
-				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-600">
+				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-800">
 					できません。<strong>あいどる</strong
-					>上でのみ有効になる設定になっています。改造すれば他のサイトでも利用可能です。
+					>上でのみ機能有効になる設定になっています。改造すれば他のサイトでも利用可能です。類似の汎用的な<Link icon={Launch} href="https://chrome.google.com/webstore/detail/right-click-to-calendar/femihkgadmhfmdlkjjfjcgleppfggadk?hl=ja" target="_blank">拡張機能</Link>もあるのでご利用検討してみてください。
 				</p>
 			</li>
 		</ol>
