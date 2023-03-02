@@ -19,8 +19,9 @@
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				>こちら</a
-			>から。バージョン0.4.5以上をご利用ください。アプリケーションの認証が完了していない場合、警告が出ますが、左下Advancedからインストール可能です。<br/>
-			ご心配な方は認証完了までお待ち下さい。もう少し時間かかりそうです。<small
+			>から。バージョン0.4.7以上をご利用ください。アプリケーションの認証が完了していない場合、警告が出ますが、左下Advancedからインストール可能です。<br
+			/>
+			ご心配な方は認証完了までお待ち下さい。ようやく認証終わりそうですが、もう少し時間かかりそうです。<small
 				>（最新版のChromeウェブストアは更新登録に時間がかかりますのでお待ち下さい）</small
 			>
 			<a
@@ -72,30 +73,56 @@
 						カレンダーイベントの編集そのものはできません。Googleカレンダー上で編集を行ってください。<br
 						/>
 						なお、ChromeでGoogleアカウントにログインしている必要があります。
+					</p>
+				</Column></Row
+			>
+			<!--<Row class="py-4"
+				><Column
+					><img
+						src="/screen_calendar_01.jpg"
+						class="object-none object-center shadow-md rounded-full mx-auto h-20 w-60 scale-110"
+					/></Column
+				><Column
+					><img
+						src="/screen_calendar_01.jpg"
+						class="object-none object-left-top shadow-md rounded-full mx-auto h-20 w-80 scale-110"
+					/></Column
+				><Column
+					><img
+						src="/screen_calendar_01.jpg"
+						class="object-none object-right shadow-md rounded-full mx-auto h-40 w-80"
+					/></Column
+				><Column
+					><img
+						src="/screen_calendar_01.jpg"
+						class="object-none object-right-top shadow-md rounded-full mx-auto h-40 w-80"
+					/></Column
+				></Row
+			>-->
+			<Row
+				><Column
+					><h2 class="pt-4">利用規約</h2>
+					<p class="leading-8">
+						特にありません。無料でご利用いただけます。<br />
+						あいどるに負荷がかからない配慮をしていますが、同友会事務局から正当な理由による公開差止め要請があった場合は公開は中止します。<br
+						/>
+						モチベーション維持のための寄付やプレゼントは歓迎します。<a
+							href="https://www.amazon.jp/hz/wishlist/ls/3VZ6OX6U7SG2R?ref_=wl_share"
+							>Amazon 欲しい物リスト</a
+						>
 					</p></Column
 				></Row
 			>
-			<Row
-			><Column
-				><h2 class="pt-4">利用規約</h2>
-				<p class="leading-8">
-					特にありません。無料でご利用いただけます。<br/>
-					あいどるに負荷がかからない配慮をしていますが、同友会事務局から正当な理由による公開差止めなどの要請があった場合は公開は中止します。<br/>
-					モチベーション維持のための寄付やプレゼントは歓迎します。<a href="https://www.amazon.jp/hz/wishlist/ls/3VZ6OX6U7SG2R?ref_=wl_share">Amazon 欲しい物リスト</a>
-				</p></Column
-			></Row
-		>
 		</Grid>
 	</div>
 </div>
 
 <style>
 	h1 {
-
-		font-size:xx-large;
+		font-size: xx-large;
 	}
 	h2 {
-		font-size:x-large;
+		font-size: x-large;
 	}
 	button.detail {
 		position: relative;
