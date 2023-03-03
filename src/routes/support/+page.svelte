@@ -57,7 +57,8 @@
 			<li class="pb-2">
 				脆弱性はありませんか？セキュリティは大丈夫ですか？<br />
 				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-800">
-					大丈夫です。心配な方はご利用にならないでください。
+					大丈夫です。心配な方はご利用にならないでください。<strong>あいどる</strong
+					>の方が脆弱性が満載です。
 				</p>
 			</li>
 			<li class="pb-2">
@@ -69,6 +70,13 @@
 						href="https://chrome.google.com/webstore/detail/right-click-to-calendar/femihkgadmhfmdlkjjfjcgleppfggadk?hl=ja"
 						target="_blank">拡張機能</Link
 					>もあるのでご利用を検討してみてください。
+				</p>
+			</li>
+			<li class="pb-2">
+				共有パソコンで利用できますか？<br />
+				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-800">
+					同じGoogleアカウントを使い回すことは推奨できません。また複数の<strong>あいどる</strong
+					>アカウントがある場合、ブラウザに記録されるイベント情報が混在する可能性があります。
 				</p>
 			</li>
 		</ol>
