@@ -19,11 +19,7 @@
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				>こちら</a
-			>から。バージョン0.4.7以上をご利用ください。アプリケーションの認証が完了していない場合、警告が出ますが、左下Advancedからインストール可能です。<br
-			/>
-			ご心配な方は認証完了までお待ち下さい。ようやく認証終わりそうですが、もう少し時間かかりそうです。<small
-				>（最新版のChromeウェブストアは更新登録に時間がかかりますのでお待ち下さい）</small
-			>
+			>から。バージョン0.4.10以上をご利用ください。
 			<a
 				class="block m-4"
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
@@ -48,8 +44,9 @@
 				><Column
 					><h2>利用方法</h2>
 					<p class="leading-8">
-						インストールすると<strong>あいどる</strong
-						>ポータル上のカレンダーページを開いた際、ページ右上に<strong
+						インストールすると<strong>あいどる</strong>ポータル上の<strong class="text-red-800"
+							>カレンダーページを開いた際</strong
+						>、ページ右上に<strong
 							><svg
 								width="24px"
 								height="24px"
