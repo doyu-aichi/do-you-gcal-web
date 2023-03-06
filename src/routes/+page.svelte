@@ -10,9 +10,10 @@
 	<div class="md:mb-4 sm:mb-0 grid grid-flow-row-dense grid-cols-1">
 		<h1 class="block lg:text-xl md:text-lg sm:text-xs">Do You Gcalサポートサイト</h1>
 		<p class="p-4">
-			愛知県中小企業同友会のポータルサイト、あいどるのカレンダー機能を補完しGoogleカレンダー連携を行うChrome拡張、<strong
+			愛知県中小企業同友会のポータルサイト、<strong>あいどる</strong
+			>のカレンダー機能を補完しワンクリックでGoogleカレンダーにスケジュール登録を行うChrome拡張、<strong
 				>Do You Gcal</strong
-			>の公式サイトです<br />
+			>の公式サイトです（拡張機能を公開するためにサポートサイト開設が要件なので作成しました）<br />
 			なお、当ホームページならびにChrome拡張機能は愛知県中小企業同友会とは一切、関係はありません。
 		</p>
 		<p class="p-4">
@@ -107,12 +108,15 @@
 					><h2 class="pt-4">利用規約</h2>
 					<p class="leading-8">
 						特にありません。無料でご利用いただけます。<br />
-						あいどるに負荷がかからない配慮をしていますが、同友会事務局から正当な理由による公開差止め要請があった場合は公開は中止します。<br
+						<strong>あいどる</strong
+						>に負荷がかからない配慮をしていますが、同友会事務局から正当な理由による公開差止め要請があった際、公開中止することがあります。<br
 						/>
 						モチベーション維持のための寄付やプレゼントは歓迎します。<a
 							href="https://www.amazon.jp/hz/wishlist/ls/3VZ6OX6U7SG2R?ref_=wl_share"
 							>Amazon 欲しい物リスト</a
 						>
+						<br />
+						また個人的に特別な追加機能をご希望の場合は有償にて対応も可能です。ご相談ください。
 					</p></Column
 				></Row
 			>
