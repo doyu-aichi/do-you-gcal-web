@@ -38,6 +38,8 @@
 						<ImageLoader
 							class="rounded-lg shadow shadow-md"
 							fadeIn
+							width="1280"
+							height="800"
 							src="/screen_01.jpg"
 							style="max-width: 60vh;margin: 0 auto;"
 							alt="スクリーン"
