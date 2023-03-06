@@ -18,15 +18,16 @@
 		<p class="p-4">
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
-				>こちら</a
+				aria-label="Chrome Web Store">こちら</a
 			>から。バージョン0.4.10以上をご利用ください。<br />
-			<i class="italic text-red-500"
+			<i class="italic text-red-600"
 				>この拡張機能は、セーフ ブラウジング保護強化機能で信頼されていません</i
 			>と警告が出るかもしれませんが、新規登録したデベロッパーは信頼されたデベロッパーとみなされるのに数ヶ月要するためで、特に問題があるわけではありません。
 			<a
 				class="block m-4"
+				aria-label="Chrome Web Store"
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
-				><img src="/store_budge_s.png" /></a
+				><img src="/store_budge_s.png" alt="Chrome Web Store" /></a
 			>
 		</p>
 		<div />
@@ -48,7 +49,7 @@
 					><h2>利用方法</h2>
 					<p class="leading-8">
 						インストールすると<strong>あいどる</strong>ポータル上の<strong
-							class=" bg-red-500  text-white px-2 py-0.5 mx-1">カレンダーページを開いた際</strong
+							class=" bg-red-600  text-white px-2 py-0.5 mx-1">カレンダーページを開いた際</strong
 						>、ページ右上に<strong
 							><svg
 								width="24px"
