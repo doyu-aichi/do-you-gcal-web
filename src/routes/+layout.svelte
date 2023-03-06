@@ -12,16 +12,23 @@
 		faUserGear,
 		faShield
 	} from '@fortawesome/free-solid-svg-icons';
-	import { Header,
+	import {
+		Header,
 		HeaderNav,
 		HeaderNavMenu,
-		HeaderNavItem, SideNav,
-    SideNavItems,
-    SideNavMenu,
-    SideNavMenuItem,
-    SideNavLink,
-    SideNavDivider,
-    SkipToContent, Content, Grid, Row, Column } from 'carbon-components-svelte';
+		HeaderNavItem,
+		SideNav,
+		SideNavItems,
+		SideNavMenu,
+		SideNavMenuItem,
+		SideNavLink,
+		SideNavDivider,
+		SkipToContent,
+		Content,
+		Grid,
+		Row,
+		Column
+	} from 'carbon-components-svelte';
 	import Footer from '$components/Footer.svelte';
 	import SettingsAdjust from 'carbon-icons-svelte/lib/SettingsAdjust.svelte';
 	import UserAvatarFilledAlt from 'carbon-icons-svelte/lib/UserAvatarFilledAlt.svelte';
@@ -59,10 +66,9 @@
 	<HeaderNav>
 		<HeaderNavItem href="/support" text="サポート" />
 		<HeaderNavItem href="/privacy" text="プライバシー" />
-		</HeaderNav
-	>
+	</HeaderNav>
 </Header>
-<SideNav bind:isOpen={isSideNavOpen} rail>
+<SideNav bind:isOpen={isSideNavOpen} rail aria-label="メニュー">
 	<SideNavItems>
 		<SideNavLink href="{base}/support" text="サポート"
 			><svelte:fragment slot="icon">

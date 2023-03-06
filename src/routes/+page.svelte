@@ -27,7 +27,7 @@
 				class="block m-4"
 				aria-label="Chrome Web Store"
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
-				><img src="/store_budge_s.png" alt="Chrome Web Store" /></a
+				><img src="/store_budge_s.png" width="208" height="58" alt="Chrome Web Store" /></a
 			>
 		</p>
 		<div />
@@ -40,7 +40,7 @@
 							fadeIn
 							width="1280"
 							height="800"
-							src="/screen_01.jpg"
+							src="/screen_01.webp"
 							style="max-width: 60vh;margin: 0 auto;"
 							alt="スクリーン"
 						/></Tile
