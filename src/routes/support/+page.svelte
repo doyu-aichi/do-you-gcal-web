@@ -107,6 +107,10 @@
 		<h2 class="p-5">更新履歴</h2>
 		<ul class="pl-6 list-none list-inside">
 			<li class="version">
+				<strong>v0.4.11</strong>2024-03-09
+				年度切替を設定から行えるようになりました。所属グループ表示を改良。
+			</li>
+			<li class="version">
 				<strong>v0.4.10</strong>2024-03-02 所属グループからイベントの判別を一部行うように
 			</li>
 			<li class="version">
