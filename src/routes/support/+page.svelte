@@ -31,13 +31,13 @@
 			<li class="pb-2">
 				スマートフォンに対応していますか？<br />
 				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-800">
-					してません。Chrome拡張機能がモバイル版Chromeに対応していないので対応予定もありません。
+					してません。Android、iPhoneともに対応不可能です。Chrome拡張機能がモバイル版Chromeに対応していないので対応予定もありません。
 				</p>
 			</li>
 			<li class="pb-2">
-				Chrome以外のブラウザ、Edgeでも使えますか？<br />
+				Chrome以外のブラウザ、EdgeやSafariでも使えますか？<br />
 				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-800">
-					使えません。将来的には対応するかもしれません。
+					使えません。Edgeには将来的に対応するかもしれません。Safariには対応不可能です。
 				</p>
 			</li>
 			<li class="pb-2">
