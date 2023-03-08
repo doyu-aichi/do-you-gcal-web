@@ -35,6 +35,12 @@
 				</p>
 			</li>
 			<li class="pb-2">
+				Chrome以外のブラウザ、Edgeでも使えますか？<br />
+				<p class="lg:p-3 md:p-1 sm:px-1 text-sm text-blue-800">
+					使えません。将来的には対応するかもしれません。
+				</p>
+			</li>
+			<li class="pb-2">
 				画面上のイベントが拡張画面に反映されないときがあります<br />
 				<p class="lg:p-3 md:p-1 sm:px-1  text-sm text-blue-800">
 					表示が崩れるなど含め、不具合時はリロードしてみてください
@@ -88,10 +94,14 @@
 		</p>
 
 		<ol class="pl-6 list-decimal list-inside">
+			<li class="">年度切替（モチベーション 50/100）</li>
 			<li class="">拡張機能またはカレンダーからの直接の出欠操作（モチベーション 30/100）</li>
 			<li class="">Microsoft Edge対応（モチベーション 10/100）</li>
 			<li class="">Outlook カレンダー連携（モチベーション 5/100）</li>
 			<li class="">iCloud カレンダー連携（モチベーション 5/100）</li>
+			<li class="">
+				ジョルテ カレンダー連携（モチベーション 0/100）Googleカレンダー経由で連携してください
+			</li>
 		</ol>
 
 		<h2 class="p-5">更新履歴</h2>
