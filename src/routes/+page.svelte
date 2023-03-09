@@ -17,6 +17,11 @@
 			なお、当ホームページならびにChrome拡張機能は愛知県中小企業同友会とは一切、関係はありません。
 		</p>
 		<p class="p-4">
+			公開の場で批判をすべきではないですが、正直なところW3C標準に満足に準拠できていない数多のコーディングはじめ、脆弱性懸念など<strong
+				>あいどる</strong
+			>のベンダーの能力には疑念を抱かざるを得ません。ベンダーだけでなく受け入れ監査を行うべき事務局にも問題があります。
+		</p>
+		<p class="p-4">
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				aria-label="Chrome Web Store">こちら</a
