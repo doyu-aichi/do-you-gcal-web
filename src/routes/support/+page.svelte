@@ -1,5 +1,16 @@
 <script lang="ts">
-	import { Grid, Row, Column, Link } from 'carbon-components-svelte';
+	import {
+		Grid,
+		Row,
+		Column,
+		Tag,
+		Link,
+		StructuredList,
+		StructuredListHead,
+		StructuredListRow,
+		StructuredListCell,
+		StructuredListBody
+	} from 'carbon-components-svelte';
 	import Launch from 'carbon-icons-svelte/lib/Launch.svelte';
 </script>
 
@@ -93,8 +104,10 @@
 			所属組織、資料保管庫の一覧性の悪さに耐えきれなくなったら、なんとかするかもしれません。
 		</p>
 
-		<ol class="pl-6 list-decimal list-inside">
-			<li class="">年度切替（モチベーション 50/100）</li>
+		<ul class="pl-6 list-disc list-inside">
+			<li class="">
+				年度切替（モチベーション 50/100）<Tag size="sm" type="blue">DONE</Tag>
+			</li>
 			<li class="">拡張機能またはカレンダーからの直接の出欠操作（モチベーション 30/100）</li>
 			<li class="">Microsoft Edge対応（モチベーション 10/100）</li>
 			<li class="">Outlook カレンダー連携（モチベーション 5/100）</li>
@@ -102,48 +115,85 @@
 			<li class="">
 				ジョルテ カレンダー連携（モチベーション 0/100）Googleカレンダー経由で連携してください
 			</li>
-		</ol>
+		</ul>
 
 		<h2 class="p-5">更新履歴</h2>
-		<ul class="pl-6 list-none list-inside">
-			<li class="version">
-				<strong>v0.4.11</strong>2024-03-09
-				年度切替を設定から行えるようになりました。所属グループ表示を改良。
-			</li>
-			<li class="version">
-				<strong>v0.4.10</strong>2024-03-02 所属グループからイベントの判別を一部行うように
-			</li>
-			<li class="version">
-				<strong>v0.4.9</strong>2024-03-01 カレンダーリンク修正
-			</li>
-			<li class="version">
-				<strong>v0.4.8</strong>2024-03-01 Google API利用スコープ変更
-			</li>
-			<li class="version">
-				<strong>v0.4.7</strong>2024-03-01 Google API利用スコープ変更
-			</li>
-			<li class="version">
-				<strong>v0.4.6</strong>2024-02-27 Google API利用認証対応
-			</li>
-			<li class="version">
-				<strong>v0.4.5</strong>2024-02-25 レイアウト・デザイン修正
-			</li>
-			<li class="version">
-				<strong>v0.4.4</strong>2024-02-25 データフォーマット修正
-			</li>
-			<li class="version">
-				<strong>v0.4.3</strong>2024-02-25 データテーブル化 フィルタ機能
-			</li>
-			<li class="version">
-				<strong>v0.4.2</strong>2024-02-25 組織図ツリー、Carbon Layout 導入
-			</li>
-			<li class="version">
-				<strong>v0.4.1</strong>2024-02-24 終日イベントへの対応、取得中の割り込み禁止対応
-			</li>
-			<li class="version">
-				<strong>v0.4.0</strong>2024-02-24 Google認証エラー対応
-			</li>
-		</ul>
+
+		<StructuredList condensed>
+			<StructuredListHead>
+				<StructuredListRow head>
+					<StructuredListCell head>Version</StructuredListCell>
+					<StructuredListCell head>Date</StructuredListCell>
+					<StructuredListCell head>変更内容</StructuredListCell>
+				</StructuredListRow>
+			</StructuredListHead>
+			<StructuredListBody>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.11</StructuredListCell>
+					<StructuredListCell noWrap>2024-03-09</StructuredListCell>
+					<StructuredListCell>
+						年度切替を設定から行えるようになりました。所属グループ表示を改良。
+					</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.10</StructuredListCell>
+					<StructuredListCell noWrap>2024-03-02</StructuredListCell>
+					<StructuredListCell>所属グループからイベントの判別を一部行うように</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.9</StructuredListCell>
+					<StructuredListCell noWrap>2024-03-01</StructuredListCell>
+					<StructuredListCell>カレンダーリンク修正</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.8</StructuredListCell>
+					<StructuredListCell noWrap>2024-03-01</StructuredListCell>
+					<StructuredListCell noWrap>Google API利用スコープ変更</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.7</StructuredListCell>
+					<StructuredListCell noWrap>2024-03-01</StructuredListCell>
+					<StructuredListCell>Google API利用スコープ変更</StructuredListCell></StructuredListRow
+				>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.6</StructuredListCell>
+					<StructuredListCell noWrap>2024-02-27</StructuredListCell>
+					<StructuredListCell>Google API利用認証対応</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.5</StructuredListCell>
+					<StructuredListCell noWrap>2024-02-25</StructuredListCell>
+					<StructuredListCell>レイアウト・デザイン修正</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.4</StructuredListCell>
+					<StructuredListCell noWrap>2024-02-25</StructuredListCell>
+					<StructuredListCell>データフォーマット修正</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.3</StructuredListCell>
+					<StructuredListCell noWrap>2024-02-25</StructuredListCell>
+					<StructuredListCell>データテーブル化 フィルタ機能</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.2</StructuredListCell>
+					<StructuredListCell noWrap>2024-02-25</StructuredListCell>
+					<StructuredListCell noWrap>組織図ツリー、Carbon Layout 導入</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.1</StructuredListCell>
+					<StructuredListCell noWrap>2024-02-24</StructuredListCell>
+					<StructuredListCell noWrap
+						>終日イベントへの対応、取得中の割り込み禁止対応</StructuredListCell
+					>
+				</StructuredListRow>
+				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.4.0</StructuredListCell>
+					<StructuredListCell noWrap>2024-02-24</StructuredListCell>
+					<StructuredListCell>Google認証エラー対応</StructuredListCell>
+				</StructuredListRow>
+			</StructuredListBody>
+		</StructuredList>
 	</div>
 </div>
 
@@ -151,11 +201,12 @@
 	li::before {
 		font-size: larger;
 	}
-	li {
+	li :not(*) {
 		text-indent: -1rem;
 		margin-left: 1rem;
-		line-height: 1.1rem;
+		line-height: 1rem;
 	}
+
 	li > p {
 		text-indent: 0;
 		margin-left: 0rem;
@@ -170,5 +221,11 @@
 	}
 	li {
 		padding: 0 0 0.4em;
+	}
+	li > s {
+		margin: 0 1rem 0 0;
+	}
+	:global(.bx--tag) {
+		margin: 0 !important;
 	}
 </style>

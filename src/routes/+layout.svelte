@@ -139,9 +139,6 @@
 	:global(.bx--side-nav--expanded) {
 		animation: 0.2s showmenu;
 	}
-	:global(.bx--side-nav.bx--side-nav--collapsed ~ .bx--content) {
-		//margin-left: 3rem !important;
-	}
 
 	:global(.bx--side-nav.bx--side-nav--collapsed ~ .bx--content) {
 		margin-left: 0 !important;
