@@ -129,6 +129,11 @@
 			</StructuredListHead>
 			<StructuredListBody>
 				<StructuredListRow>
+					<StructuredListCell head noWrap>v0.5.1</StructuredListCell>
+					<StructuredListCell noWrap>2024-03-15</StructuredListCell>
+					<StructuredListCell>日付インプット挿入</StructuredListCell>
+				</StructuredListRow>
+				<StructuredListRow>
 					<StructuredListCell head noWrap>v0.5.0</StructuredListCell>
 					<StructuredListCell noWrap>2024-03-13</StructuredListCell>
 					<StructuredListCell>行事登録ページでの日付自動入力機能</StructuredListCell>
