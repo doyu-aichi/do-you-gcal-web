@@ -28,7 +28,7 @@
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				aria-label="Chrome Web Store">こちら</a
-			>から。バージョン0.4.10以上をご利用ください。<br />
+			>から。バージョン0.5.0以上をご利用ください。<br />
 			<i class="italic text-red-600"
 				>この拡張機能は、セーフ ブラウジング保護強化機能で信頼されていません</i
 			>と警告が出るかもしれませんが、新規登録したデベロッパーは信頼されたデベロッパーとみなされるのに数ヶ月要するためで、特に問題があるわけではありません。

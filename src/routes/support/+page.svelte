@@ -106,7 +106,8 @@
 
 		<ul class="pl-6 list-disc list-inside">
 			<li class="">
-				年度切替（モチベーション 50/100）<Tag size="sm" type="blue">DONE</Tag>
+				過去に年度を切り替え、さらに所属を変えると非表示なることがあります。機能拡張をオフにしてから再度オンにしてみてください（モチベーション
+				40/100）
 			</li>
 			<li class="">拡張機能またはカレンダーからの直接の出欠操作（モチベーション 30/100）</li>
 			<li class="">Microsoft Edge対応（モチベーション 10/100）</li>
@@ -114,6 +115,9 @@
 			<li class="">iCloud カレンダー連携（モチベーション 5/100）</li>
 			<li class="">
 				ジョルテ カレンダー連携（モチベーション 0/100）Googleカレンダー経由で連携してください
+			</li>
+			<li class="">
+				年度切替（モチベーション 50/100）<Tag size="sm" type="blue">DONE</Tag>
 			</li>
 		</ul>
 
