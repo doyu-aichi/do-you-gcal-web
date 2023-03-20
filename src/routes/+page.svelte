@@ -10,7 +10,7 @@
 	<div class="md:mb-4 sm:mb-0 grid grid-flow-row-dense grid-cols-1">
 		<h1 class="block lg:text-xl md:text-lg sm:text-xs">Do You Gcalサポートサイト</h1>
 		<p class="p-4">
-			愛知県中小企業同友会のポータルサイト、<strong>あいどる</strong
+			愛知県中小企業同友会の会員忍耐力養成ポータルサイト、<strong>あいどる</strong
 			>のカレンダー機能を補完しワンクリックでGoogleカレンダーにスケジュール登録を行うChrome拡張、<strong
 				>Do You Gcal</strong
 			>の公式サイトです（拡張機能を公開するためにサポートサイト開設が要件なので作成しました）<br />
