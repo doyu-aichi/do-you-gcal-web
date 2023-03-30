@@ -25,6 +25,9 @@
 			ベンダーの問題もさることながら受け入れ監査を行うべき事務局にも問題があるのではないでしょうか。
 		</p>
 		<p class="p-4">
+			個人的に「中小企業はこうしてDXに失敗する」というサンプルケースを体現してると思っています。
+		</p>
+		<p class="p-4">
 			インストールは<a
 				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
 				aria-label="Chrome Web Store">こちら</a
