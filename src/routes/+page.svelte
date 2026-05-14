@@ -1,172 +1,411 @@
 <script lang="ts">
-	import { Grid, Row, Column, Tile, ImageLoader } from 'carbon-components-svelte';
+	const features = [
+		{
+			title: 'サイドパネル',
+			text: '右上の耳タブから開閉。ページを邪魔しないまま、カレンダー、組織図ツリー、設定、ガイドを切り替えられます。'
+		},
+		{
+			title: 'Google カレンダー同期',
+			text: '出席予定だけを登録し、欠席になった予定は削除。既存イベントは localStorage のイベント ID キャッシュで重複登録を避けます。'
+		},
+		{
+			title: '複数カレンダー参照',
+			text: '同友会関連の Google カレンダーを複数選択して表示。保存先カレンダーはひとつに固定できます。'
+		},
+		{
+			title: '詳細情報の反映',
+			text: '詳細画面から場所、概要、複数の出欠項目を読み取り、Google カレンダーの内容に反映します。'
+		},
+		{
+			title: '組織図ツリー',
+			text: 'サイトの年度別メニューから所属グループを解析し、親子関係が分かる表示で組織を切り替えられます。'
+		},
+		{
+			title: '関連リンク',
+			text: '組織ごとの資料保管庫、スケジュールから案内メール画面への導線を追加します。'
+		}
+	];
+
+	const steps = [
+		'Chrome Web Store から拡張機能をインストールします。',
+		'Chrome で Google アカウントにログインします。',
+		'あいち同友会のページを開くと、右上に Do You Gcal の耳タブが表示されます。',
+		'設定タブで参照するカレンダーと、登録先カレンダーを選択します。',
+		'予定詳細または申込画面で「Google カレンダーへ反映」を有効にして登録します。'
+	];
 </script>
 
 <svelte:head>
-	<title>Do You Gcalサポートサイト</title>
-	<meta name="description" content="Do You Gcal" />
+	<title>Do You Gcal | あいち同友会スケジュール補助 Chrome 拡張</title>
+	<meta
+		name="description"
+		content="あいち同友会サイトの予定、組織図ツリー、Google カレンダー同期を補助する Chrome 拡張 Do You Gcal のサポートサイトです。"
+	/>
 </svelte:head>
-<div class="lg:p-4 lg:m-4 sm:m-0 sm:p-0">
-	<div class="md:mb-4 sm:mb-0 grid grid-flow-row-dense grid-cols-1">
-		<h1 class="block lg:text-xl md:text-lg sm:text-xs">Do You Gcalサポートサイト</h1>
-		<p class="p-4">
-			愛知県中小企業同友会の会員忍耐力養成ポータルサイト、<strong>あいどる</strong
-			>のカレンダー機能を補完しワンクリックでGoogleカレンダーにスケジュール登録を行うChrome拡張、<strong
-				>Do You Gcal</strong
-			>の公式サイトです（拡張機能を公開するためにサポートサイト開設が要件なので作成しました）<br />
-			なお、当ホームページならびにChrome拡張機能は愛知県中小企業同友会とは一切、関係はありません。
-		</p>
-		<p class="p-4">
-			公開の場で批判をすべきではありませんが、正直なところ<strong>あいどる</strong
-			>にはW3C標準に満足に準拠できていない数多のコーディングはじめ脆弱性懸念すらあるのですが、長年に渡り問題は放置されています。<br
-			/>
-			これからも改善は期待できそうもなく、利用するたびに非常に残念な気持ちにならざるをえません。<br
-			/>
-			ベンダーの問題もさることながら受け入れ監査を行うべき事務局にも問題があるのではないでしょうか。
-		</p>
-		<p class="p-4">
-			個人的に<strong>「中小企業はこうしてDXに失敗する」</strong
-			>という具体例のひとつだと思っています。心から脆弱性対策だけは早く対処してほしいと願っています。<br
-			/>苛立ちが募ってしまうばかりなので事務局に対して、脆弱性の警告とベンダーに関して質問のメールを送りました。<br
-			/>→
-			誠実な対応がなかったのでIPAに脆弱性を報告、IPAから指導していただき、結果、脆弱性対応していただけることになりました。ベンダー、事務局責任者に関しては開示されないままです。
-		</p>
-		<p class="p-4">
-			インストールは<a
-				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
-				aria-label="Chrome Web Store">こちら</a
-			>から。バージョン0.5.0以上をご利用ください。<br />
-			<i class="italic text-red-600"
-				>この拡張機能は、セーフ ブラウジング保護強化機能で信頼されていません</i
-			>と警告が出るかもしれませんが、新規登録したデベロッパーは信頼されたデベロッパーとみなされるのに数ヶ月要するためで、特に問題があるわけではありません。
-			<a
-				class="block m-4"
-				aria-label="Chrome Web Store"
-				href="https://chrome.google.com/webstore/detail/nhgpinmgbpglndjkllhbcjcljbenjbgm?authuser=0&hl=ja"
-				><img src="/store_budge_s.png" width="208" height="58" alt="Chrome Web Store" /></a
-			>
-		</p>
-		<div />
-		<Grid fullWidth>
-			<Row
-				><Column>
-					<Tile light>
-						<ImageLoader
-							class="rounded-lg shadow shadow-md"
-							fadeIn
-							width="1280"
-							height="800"
-							src="/screen_01.webp"
-							style="max-width: 60vh;margin: 0 auto;"
-							alt="スクリーン"
-						/></Tile
-					></Column
+
+<section class="hero">
+	<div class="page hero-inner">
+		<div class="hero-copy">
+			<p class="eyebrow">Chrome Extension for aichi.douyukai</p>
+			<h1>Do You Gcal</h1>
+			<p class="lead">
+				あいち同友会サイトの予定登録、出欠状態、組織切替を Chrome 上で補助する拡張機能です。
+				Google カレンダーと組織図ツリーを、同じサイドパネルから扱えるようにします。
+			</p>
+			<div class="actions">
+				<a
+					class="button primary"
+					href="https://chrome.google.com/webstore/detail/do-you-gcal/nhgpinmgbpglndjkllhbcjcljbenjbgm?hl=ja"
+					rel="noreferrer"
 				>
-			</Row><Row
-				><Column
-					><h2>利用方法</h2>
-					<p class="leading-8">
-						インストールすると<strong>あいどる</strong>ポータル上の<strong
-							class=" bg-red-600  text-white px-2 py-0.5 mx-1">カレンダーページを開いた際</strong
-						>、ページ右上に<strong
-							><svg
-								width="24px"
-								height="24px"
-								viewBox="0 0 128 128"
-								class="inline-block  align-text-bottom"
-								><circle
-									cx="64"
-									cy="64"
-									r="52"
-									style="fill:#009b2c;stroke:#b1dcff;stroke-opacity:0.7;stroke-width:13px;"
-								/><path
-									d="M46.712,31.105l-21.6,0l-0,7.68l21.504,0l-0,9.12c-0,1.44 -0,2.4 0.096,3.648c-14.88,5.472 -23.808,16.224 -23.808,29.376c-0,7.008 3.264,17.568 15.84,17.568c11.712,0 30.048,-10.368 38.112,-42.624c15.456,3.072 19.104,12 19.104,19.584c-0,18.912 -21.792,20.544 -35.424,20.544l2.208,7.488c6.72,-0.192 11.712,-0.576 17.184,-1.728c4.224,-0.96 24.096,-5.28 24.096,-25.92c-0,-6.144 -2.304,-13.056 -7.104,-18.144c-7.968,-8.256 -20.64,-9.504 -28.992,-9.504c-6.432,0 -11.328,0.864 -12.96,1.248l-0,-4.704l0.096,-5.952l46.56,0l-0,-7.68l-46.464,0l0.192,-9.792l-8.64,-0.096l-0,9.888Zm11.136,48.48c-1.248,-4.896 -2.496,-16.224 -2.688,-23.136c6.24,-1.536 10.656,-1.44 13.824,-1.344c-4.128,15.36 -9.696,22.752 -11.136,24.48Zm-6.72,6.528c-2.304,1.632 -6.432,4.512 -11.808,4.512c-5.088,0 -8.544,-3.552 -8.544,-9.888c-0,-10.56 8.064,-17.568 16.32,-21.504c0.96,11.712 1.632,19.2 4.032,26.88Z"
-									style="fill:#0d0081;fill-rule:nonzero;"
-								/></svg
-							></strong
-						>のアイコンタブが出現します。<br />
-						リストからGoogleカレンダーに登録したいイベントの青い日付ボタンををクリックするとGoogleカレンダーにイベントが登録されます（Google
-						カレンダーアイコンがあるイベントはすでにGoogleカレンダーに登録済みです）。<br />
-						各イベントの右方にある「不明」のバッジをクリックすると参加登録済み否かが画面に反映されます。<br
-						/>
-						カレンダーイベントの編集そのものはできません。Googleカレンダー上で編集を行ってください。<br
-						/>
-						なお、ChromeでGoogleアカウントにログインしている必要があります。
-					</p>
-				</Column></Row
-			>
-			<!--<Row class="py-4"
-				><Column
-					><img
-						src="/screen_calendar_01.jpg"
-						class="object-none object-center shadow-md rounded-full mx-auto h-20 w-60 scale-110"
-					/></Column
-				><Column
-					><img
-						src="/screen_calendar_01.jpg"
-						class="object-none object-left-top shadow-md rounded-full mx-auto h-20 w-80 scale-110"
-					/></Column
-				><Column
-					><img
-						src="/screen_calendar_01.jpg"
-						class="object-none object-right shadow-md rounded-full mx-auto h-40 w-80"
-					/></Column
-				><Column
-					><img
-						src="/screen_calendar_01.jpg"
-						class="object-none object-right-top shadow-md rounded-full mx-auto h-40 w-80"
-					/></Column
-				></Row
-			>-->
-			<Row
-				><Column
-					><h2 class="pt-4">利用規約</h2>
-					<p class="leading-8">
-						特にありません。無料でご利用いただけます。<br />
-						<strong>あいどる</strong
-						>に負荷がかからない配慮をしていますが、同友会事務局から正当な理由による公開差止め要請があった際、公開中止することがあります。<br
-						/>
-						モチベーション維持のための寄付やプレゼントは歓迎します。<a
-							href="https://www.amazon.jp/hz/wishlist/ls/3VZ6OX6U7SG2R?ref_=wl_share"
-							>Amazon 欲しい物リスト</a
-						>
-						<br />
-						また個人的に特別な追加機能をご希望の場合は有償にて対応も可能です。ご相談ください。
-					</p></Column
-				></Row
-			>
-		</Grid>
+					Chrome Web Store
+				</a>
+				<a class="button" href="/support">サポートを見る</a>
+			</div>
+		</div>
+		<div class="hero-visual panel" aria-label="Do You Gcal の画面イメージ">
+			<div class="mock-browser">
+				<div class="mock-top">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="mock-body">
+					<div class="mock-page">
+						<div class="mock-line wide"></div>
+						<div class="mock-line"></div>
+						<div class="mock-calendar">
+							{#each Array.from({ length: 9 }) as _, index (index)}
+								<div class:active={index === 4 || index === 7}></div>
+							{/each}
+						</div>
+					</div>
+					<div class="mock-panel">
+						<div class="mock-tab">カレンダー</div>
+						<div class="mock-event">
+							<strong>G.山田室 例会</strong>
+							<span>出席 / Google カレンダー登録済</span>
+						</div>
+						<div class="mock-event muted">
+							<strong>A.西春日井地区役員会</strong>
+							<span>案内メール / 保管庫</span>
+						</div>
+					</div>
+					<div class="ear">
+						<img src="/icon_32.png" alt="" width="32" height="32" />
+						<span>現 在 の 組 織</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
+</section>
+
+<section class="page section">
+	<p class="eyebrow">Features</p>
+	<h2>拡張で追加されること</h2>
+	<div class="grid three feature-grid">
+		{#each features as feature (feature.title)}
+			<article class="panel feature">
+				<h3>{feature.title}</h3>
+				<p>{feature.text}</p>
+			</article>
+		{/each}
+	</div>
+</section>
+
+<section class="workflow">
+	<div class="page section">
+		<p class="eyebrow">Workflow</p>
+		<h2>使い方</h2>
+		<ol class="steps">
+			{#each steps as step (step)}
+				<li>{step}</li>
+			{/each}
+		</ol>
+	</div>
+</section>
+
+<section class="page section notes">
+	<div class="panel note">
+		<h2>非公式の補助ツールです</h2>
+		<p>
+			Do You Gcal は愛知県中小企業同友会の公式サービスではありません。対象サイトの画面構造を解析して動作するため、
+			サイト側の仕様変更により一部機能が動かなくなる場合があります。
+		</p>
+	</div>
+</section>
 
 <style>
+	.hero {
+		padding: 58px 0 38px;
+	}
+
+	.hero-inner {
+		display: grid;
+		grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+		gap: 34px;
+		align-items: center;
+	}
+
+	h1,
+	h2,
+	h3,
+	p {
+		margin-top: 0;
+	}
+
 	h1 {
-		font-size: xx-large;
+		margin-bottom: 16px;
+		color: #252525;
+		font-size: clamp(2.4rem, 6vw, 5.2rem);
+		line-height: 0.96;
+		letter-spacing: 0;
 	}
+
 	h2 {
-		font-size: x-large;
+		margin-bottom: 20px;
+		font-size: clamp(1.7rem, 3vw, 2.35rem);
+		line-height: 1.15;
+		letter-spacing: 0;
 	}
-	button.detail {
+
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		margin-top: 24px;
+	}
+
+	.hero-visual {
+		padding: 14px;
+		background: #ffffff;
+	}
+
+	.mock-browser {
+		overflow: hidden;
+		background: #f0eadf;
+		border: 1px solid #d6cec2;
+		border-radius: 8px;
+	}
+
+	.mock-top {
+		display: flex;
+		gap: 7px;
+		padding: 11px;
+		background: #2c2c2c;
+	}
+
+	.mock-top span {
+		width: 10px;
+		height: 10px;
+		background: #faebd7;
+		border-radius: 50%;
+	}
+
+	.mock-body {
 		position: relative;
-		fill: #1f90a7;
-		display: inline-block;
-		background-color: white;
-		border-radius: 1em;
-		margin: 0 0.3em 0 0;
-		padding: 0;
-		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+		display: grid;
+		grid-template-columns: 1fr 210px;
+		gap: 18px;
+		min-height: 320px;
+		padding: 20px 54px 20px 20px;
 	}
-	button.add {
+
+	.mock-page,
+	.mock-panel {
+		padding: 14px;
+		border-radius: 8px;
+	}
+
+	.mock-page {
+		background: #ffffff;
+	}
+
+	.mock-panel {
+		color: #faebd7;
+		background: rgba(44, 44, 44, 0.9);
+		border-left: 4px solid #8bba14;
+	}
+
+	.mock-line {
+		height: 12px;
+		margin-bottom: 10px;
+		background: #d8d2c7;
+		border-radius: 999px;
+	}
+
+	.mock-line.wide {
+		width: 74%;
+		background: #8bba14;
+	}
+
+	.mock-calendar {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 8px;
+		margin-top: 26px;
+	}
+
+	.mock-calendar div {
+		aspect-ratio: 1.25;
+		background: #ebe3d7;
+		border: 1px solid #d1c5b4;
+		border-radius: 6px;
+	}
+
+	.mock-calendar .active {
+		background: rgba(139, 186, 20, 0.35);
+		border-color: #8bba14;
+	}
+
+	.mock-tab {
+		display: inline-flex;
+		margin-bottom: 16px;
+		padding: 5px 9px;
+		color: #2c2c2c;
+		background: #faebd7;
+		border-radius: 6px;
+		font-weight: 900;
+	}
+
+	.mock-event {
+		padding: 10px;
+		background: rgba(255, 255, 255, 0.08);
+		border: 1px solid rgba(250, 235, 215, 0.28);
+		border-radius: 6px;
+	}
+
+	.mock-event + .mock-event {
+		margin-top: 10px;
+	}
+
+	.mock-event strong,
+	.mock-event span {
+		display: block;
+	}
+
+	.mock-event span {
+		margin-top: 4px;
+		color: #d7d0c5;
+		font-size: 0.78rem;
+	}
+
+	.mock-event.muted {
+		opacity: 0.82;
+	}
+
+	.ear {
+		position: absolute;
+		right: 0;
+		top: 54px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 6px;
+		width: 48px;
+		min-height: 146px;
+		padding: 10px 5px;
+		color: #ffffff;
+		background: #8bba14;
+		border-radius: 10px 0 0 10px;
+		box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.45);
+		font-size: 0.72rem;
+		font-weight: 900;
+		writing-mode: vertical-rl;
+	}
+
+	.ear img {
+		background: #ffffff;
+		border: 1px solid #ffffff;
+		border-radius: 50%;
+		writing-mode: horizontal-tb;
+	}
+
+	.feature {
+		padding: 18px;
+	}
+
+	.feature h3 {
+		margin-bottom: 10px;
+		font-size: 1.08rem;
+	}
+
+	.feature p,
+	.note p {
+		margin-bottom: 0;
+		color: #514c45;
+		line-height: 1.75;
+	}
+
+	.workflow {
+		background: rgba(44, 44, 44, 0.06);
+		border-top: 1px solid rgba(44, 44, 44, 0.08);
+		border-bottom: 1px solid rgba(44, 44, 44, 0.08);
+	}
+
+	.steps {
+		display: grid;
+		gap: 12px;
+		margin: 0;
+		padding: 0;
+		counter-reset: step;
+		list-style: none;
+	}
+
+	.steps li {
 		position: relative;
-		fill: #c24646;
-		display: inline-block;
-		background-color: white;
-		border-radius: 1em;
-		margin: 0 0.3em 0 0;
-		padding: 0;
-		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+		min-height: 48px;
+		padding: 13px 16px 13px 58px;
+		background: #ffffff;
+		border: 1px solid rgba(44, 44, 44, 0.12);
+		border-radius: 8px;
+		line-height: 1.6;
 	}
-	small {
-		font-size: small;
+
+	.steps li::before {
+		position: absolute;
+		left: 14px;
+		top: 12px;
+		display: grid;
+		place-items: center;
+		width: 28px;
+		height: 28px;
+		color: #1f1f1f;
+		background: #8bba14;
+		border-radius: 50%;
+		content: counter(step);
+		counter-increment: step;
+		font-weight: 900;
+	}
+
+	.note {
+		padding: 22px;
+		border-left: 6px solid #8bba14;
+	}
+
+	.notes {
+		padding-top: 38px;
+	}
+
+	@media (max-width: 900px) {
+		.hero-inner {
+			grid-template-columns: 1fr;
+		}
+
+		.hero-visual {
+			order: -1;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.mock-body {
+			grid-template-columns: 1fr;
+			padding-right: 48px;
+		}
+
+		.mock-panel {
+			min-height: 180px;
+		}
 	}
 </style>
