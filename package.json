@@ -2,6 +2,7 @@
 	"name": "do-you-gcal-web",
 	"version": "0.1.0",
 	"private": true,
+	"packageManager": "pnpm@10.33.2",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
