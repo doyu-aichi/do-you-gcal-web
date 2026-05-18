@@ -1,4 +1,7 @@
 <script lang="ts">
+	const supportFormUrl =
+		'https://docs.google.com/forms/d/e/1FAIpQLSf5j5-TjUa0nobseMrh7U3l3lWKR_zIN-rUUM52wFP2FagR9w/viewform';
+
 	const faqs = [
 		{
 			question: 'どのページで動きますか？',
@@ -78,7 +81,7 @@
 		},
 		{
 			question: 'スマートフォンで使えますか？',
-			answer: '使えません。Chrome 拡張機能なので、PC 版 Chrome を対象にしています。'
+			answer: '使えません。PC 版 Chrome または Microsoft Edge を対象にしています。Edge では Chrome Web Store の拡張機能を許可してからインストールしてください。'
 		}
 	];
 
@@ -120,17 +123,40 @@
 		<section class="panel block">
 			<h2>問い合わせ</h2>
 			<p>
-				不具合の連絡は Chrome Web Store のデベロッパー問い合わせからお願いします。
+				不具合、要望、質問は専用フォームから送信してください。
 				対象 URL、表示中の組織名、予定リンクの有無が分かると確認しやすくなります。
 			</p>
-			<a
-				class="button primary"
-				href="https://chrome.google.com/webstore/detail/do-you-gcal/nhgpinmgbpglndjkllhbcjcljbenjbgm?hl=ja"
-				rel="noreferrer"
-			>
-				Chrome Web Store
+			<a class="button primary" href={supportFormUrl} target="_blank" rel="noreferrer">
+				問い合わせフォーム
 			</a>
 		</section>
+	</div>
+</section>
+
+<section class="page section">
+	<p class="eyebrow">Contact</p>
+	<h2>不具合・要望フォーム</h2>
+	<div class="panel contact-panel">
+		<div>
+			<h3>確認しやすい情報を添えて送信してください</h3>
+			<p>
+				Do You Gcal は対象サイトのHTMLを読み取って動作するため、発生したページURL、表示中の組織名、操作内容が分かると確認しやすくなります。
+				返信が必要な場合のみメールアドレスを入力してください。
+			</p>
+		</div>
+		<div class="contact-guide">
+			<ul>
+				<li>種別: 不具合、要望、質問</li>
+				<li>発生したページURL</li>
+				<li>表示中の組織名</li>
+				<li>拡張バージョン</li>
+				<li>内容</li>
+				<li>返信先メールアドレス 任意</li>
+			</ul>
+			<a class="button primary" href={supportFormUrl} target="_blank" rel="noreferrer">
+				フォームを開く
+			</a>
+		</div>
 	</div>
 </section>
 
@@ -195,6 +221,38 @@
 		line-height: 1.75;
 	}
 
+	.contact-panel {
+		display: grid;
+		grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+		gap: 24px;
+		padding: 24px;
+	}
+
+	.contact-panel h3 {
+		margin: 0 0 10px;
+		font-size: 1.25rem;
+	}
+
+	.contact-panel p {
+		margin: 0;
+		color: #514c45;
+		line-height: 1.75;
+	}
+
+	.contact-guide {
+		display: grid;
+		align-content: start;
+		justify-items: start;
+		gap: 18px;
+	}
+
+	.contact-guide ul {
+		margin: 0;
+		padding-left: 1.2rem;
+		color: #2c2c2c;
+		line-height: 1.75;
+	}
+
 	.faq {
 		display: grid;
 		gap: 10px;
@@ -238,6 +296,10 @@
 	}
 
 	@media (max-width: 560px) {
+		.contact-panel {
+			grid-template-columns: 1fr;
+		}
+
 		.history-row {
 			grid-template-columns: 1fr;
 			gap: 4px;

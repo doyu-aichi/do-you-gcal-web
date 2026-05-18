@@ -51,8 +51,8 @@
 	];
 
 	const steps = [
-		'Chrome Web Store から拡張機能をインストールします。',
-		'Chrome で Google アカウントにログインします。',
+		'配布先の Chrome Web Store から拡張機能をインストールします。',
+		'PC 版 Chrome または Microsoft Edge で Google アカウントにログインします。',
 		'あいち同友会のページを開くと、右上に Do You Gcal の耳タブが表示されます。',
 		'初期状態ではメインカレンダーが登録先と参照対象になります。必要に応じて設定タブで専用カレンダーや複数参照カレンダーを選択します。',
 		'初回ははじめにタブの状態チェックに沿って、マイページと組織員一覧を開き、組織図と名簿キャッシュを作成します。',
@@ -63,20 +63,20 @@
 </script>
 
 <svelte:head>
-	<title>Do You Gcal | あいち同友会スケジュール補助 Chrome 拡張</title>
+	<title>Do You Gcal | あいち同友会スケジュール補助ブラウザ拡張</title>
 	<meta
 		name="description"
-		content="あいち同友会サイトの予定、組織図、Googleカレンダー同期を補助する Chrome 拡張 Do You Gcal のサポートサイトです。"
+		content="あいち同友会サイトの予定、組織図、Googleカレンダー同期を補助するブラウザ拡張 Do You Gcal のサポートサイトです。"
 	/>
 </svelte:head>
 
 <section class="hero">
 	<div class="page hero-inner">
 		<div class="hero-copy">
-			<p class="eyebrow">Chrome Extension for aichi.douyukai</p>
+			<p class="eyebrow">Browser Extension for aichi.douyukai</p>
 			<h1>Do You Gcal</h1>
 			<p class="lead">
-				あいち同友会サイトの予定登録、出欠状態、組織切替を Chrome 上で補助する拡張機能です。
+				あいち同友会サイトの予定登録、出欠状態、組織切替を PC 版 Chrome / Edge 上で補助する拡張機能です。
 				Googleカレンダー、組織図、名簿キャッシュ、告知メールを、同じサイドパネルから扱えるようにします。
 			</p>
 			<div class="actions">
@@ -85,7 +85,7 @@
 					href="https://chrome.google.com/webstore/detail/do-you-gcal/nhgpinmgbpglndjkllhbcjcljbenjbgm?hl=ja"
 					rel="noreferrer"
 				>
-					Chrome Web Store
+					Chrome Web Store でインストール
 				</a>
 				<a class="button" href="/support">サポートを見る</a>
 			</div>
