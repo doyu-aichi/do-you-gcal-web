@@ -17,6 +17,7 @@
 	<nav aria-label="主要メニュー">
 		<a href="/">概要</a>
 		<a href="/support">サポート</a>
+		<a href="/faq">FAQ</a>
 		<a href="/privacy">プライバシー</a>
 	</nav>
 </header>
