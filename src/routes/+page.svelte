@@ -1,64 +1,43 @@
 <script lang="ts">
 	const features = [
 		{
-			title: 'サイドパネル',
-			text: '右上の耳タブから開閉。ページ遷移後も同じセッション内では開閉状態と最後のタブを維持し、カレンダー、組織図、名簿、告知メール、設定、ガイドを切り替えられます。'
+			title: '予定をGoogleカレンダーへ',
+			text: 'マイスケジュールや行事活動一覧で見つけた同友会予定を、出席予定としてGoogleカレンダーへ登録できます。'
 		},
 		{
-			title: '初回セットアップ',
-			text: 'はじめにタブで Googleカレンダー、組織、名簿、予定検出の状態を確認。準備完了後の案内ウィジェットは閉じると再表示しない設定にできます。'
+			title: '組織と名簿を確認',
+			text: '現在の所属、組織図、名簿キャッシュをサイドパネルで確認できます。所属ごとの絞り込みや送信先選択にも使えます。'
 		},
 		{
-			title: 'Googleカレンダー同期',
-			text: '出席予定だけを登録し、欠席のみの予定は登録対象外として扱います。既に登録済みの予定を欠席に変更した場合は Googleカレンダーから削除します。'
-		},
-		{
-			title: '複数カレンダー参照',
-			text: '参照表示する Googleカレンダーは複数選択できます。初期状態ではメインカレンダーを登録先と参照対象にし、専用カレンダーを使うかどうかは設定で選べます。'
-		},
-		{
-			title: '年度内の月移動',
-			text: 'カレンダータブではサイトで選択中の年度内の月だけを選択できます。年度をまたぐ場合は、同友会サイト上部の年度プルダウンを変更するよう案内します。'
-		},
-		{
-			title: '終了済み予定の整理',
-			text: '表示月の予定は1日から扱い、当月は目アイコンで終了済みイベントの表示/非表示を切り替えられます。今日の予定には本日バッジを表示します。'
-		},
-		{
-			title: '詳細情報の反映',
-			text: '詳細画面から場所、概要、複数の出欠項目を読み取り、Googleカレンダーの内容に反映します。出欠返信はブラウザ内に記録して一覧表示にも利用します。'
-		},
-		{
-			title: '組織図',
-			text: 'サイトの年度別メニューから所属グループを解析し、親子関係が分かる表示で組織を切り替えられます。下位グループは展開して所属メンバーを確認できます。'
-		},
-		{
-			title: '名簿キャッシュ',
-			text: '組織員一覧、名簿ページ、配信先ページを開いたタイミングで会員名簿をブラウザ内に保存し、所属バッジ、ページング、展開表示で確認できます。'
-		},
-		{
-			title: '告知メール',
-			text: 'イベント詳細から告知本文を作成。到達性を安定させるため、所属バッジで送信先を選び、BCC と本文を Gmail など普段使うメール環境へ貼り付けやすい形でコピーできます。'
-		},
-		{
-			title: 'ページ上の補助ボタン',
-			text: 'イベント詳細ページには Googleカレンダー同期、告知メール、本文コピーの小型ツールバーを追加。名簿ページには現在組織の名簿キャッシュ更新ボタンを追加します。'
-		},
-		{
-			title: '関連リンク',
-			text: '組織ごとの資料保管庫、スケジュールから案内メール画面への導線を追加します。'
+			title: '告知メール作成を補助',
+			text: 'イベント詳細から本文を作り、選択した名簿メンバーのBCC用メールアドレスをコピーできます。'
 		}
 	];
 
 	const steps = [
 		'配布先の Chrome Web Store から拡張機能をインストールします。',
-		'PC 版 Chrome または Microsoft Edge で Google アカウントにログインします。',
-		'あいち同友会のページを開くと、右上に Do You Gcal の耳タブが表示されます。',
-		'初期状態ではメインカレンダーが登録先と参照対象になります。必要に応じて設定タブで専用カレンダーや複数参照カレンダーを選択します。',
-		'初回ははじめにタブの状態チェックに沿って、マイページと組織員一覧を開き、組織図と名簿キャッシュを作成します。',
-		'マイスケジュールまたは行事活動一覧を開き、表示月の同友会スケジュールを検出します。表示月はサイトで選択中の年度内から選び、検出済み状態はブラウザ内に記録されます。',
-		'マイスケジュールまたは行事活動から予定を開き、「Googleカレンダーへ反映」を有効にして登録します。',
-		'告知メールを送る場合は、イベント詳細の小型ツールバーまたは告知メールタブから本文を作成し、名簿の所属バッジから BCC 対象を選択します。'
+		'あいどるにログインすると、右上に Do You Gcal の耳タブが表示されます。',
+		'はじめにタブの状態チェックに沿って、カレンダー、組織、名簿を準備します。',
+		'マイスケジュールまたは行事活動一覧を開き、表示月の予定を検出します。'
+	];
+
+	const useCases = [
+		{
+			scene: '例会や委員会の予定を忘れたくない',
+			usage: 'マイスケジュールや行事活動一覧で予定を検出し、出席する予定だけGoogleカレンダーへ登録します。'
+		},
+		{
+			scene: '所属グループの予定を確認したい',
+			usage: '組織図で現在の所属や下位グループを確認し、カレンダー上の予定がどの組織のものかを見分けます。'
+		},
+		{
+			scene: '例会案内を自分のメールから送りたい',
+			usage: 'イベント詳細から告知本文を作成し、名簿の所属バッジで送信先を選んでBCCをコピーします。'
+		},
+		{
+			scene: '名簿や予定の状態がおかしい',
+			usage: '設定タブのキャッシュ状態やページ自己診断を確認し、必要に応じて名簿や表示月を再同期します。'
+		}
 	];
 </script>
 
@@ -66,7 +45,7 @@
 	<title>Do You Gcal | あいち同友会スケジュール補助ブラウザ拡張</title>
 	<meta
 		name="description"
-		content="あいち同友会サイトの予定、組織図、Googleカレンダー同期を補助するブラウザ拡張 Do You Gcal のサポートサイトです。"
+		content="あいどるの同友会予定をGoogleカレンダーへ登録し、組織図、名簿、告知メール作成を補助する非公式ブラウザ拡張です。"
 	/>
 </svelte:head>
 
@@ -76,8 +55,8 @@
 			<p class="eyebrow">Browser Extension for aichi.douyukai</p>
 			<h1>Do You Gcal</h1>
 			<p class="lead">
-				あいち同友会サイトの予定登録、出欠状態、組織切替を PC 版 Chrome / Edge 上で補助する拡張機能です。
-				Googleカレンダー、組織図、名簿キャッシュ、告知メールを、同じサイドパネルから扱えるようにします。
+				あいどるの予定管理を、少し楽に。予定登録、組織確認、名簿確認、告知メール作成を
+				PC 版 Chrome / Edge のサイドパネルで補助する非公式拡張です。
 			</p>
 			<div class="actions">
 				<a
@@ -130,7 +109,7 @@
 
 <section class="page section">
 	<p class="eyebrow">Features</p>
-	<h2>拡張で追加されること</h2>
+	<h2>できること</h2>
 	<div class="grid three feature-grid">
 		{#each features as feature (feature.title)}
 			<article class="panel feature">
@@ -139,17 +118,34 @@
 			</article>
 		{/each}
 	</div>
+	<p class="more-link"><a href="/support">詳しい使い方とFAQを見る</a></p>
+</section>
+
+<section class="page section use-cases">
+	<p class="eyebrow">Use Cases</p>
+	<h2>場面別の活用法</h2>
+	<div class="grid two">
+		{#each useCases as item (item.scene)}
+			<article class="panel use-case">
+				<h3>{item.scene}</h3>
+				<p>{item.usage}</p>
+			</article>
+		{/each}
+	</div>
 </section>
 
 <section class="workflow">
 	<div class="page section">
 		<p class="eyebrow">Workflow</p>
-		<h2>使い方</h2>
+		<h2>最初にやること</h2>
 		<ol class="steps">
 			{#each steps as step (step)}
 				<li>{step}</li>
 			{/each}
 		</ol>
+		<p class="workflow-note">
+			イベント、名簿、出欠状態は、対象ページを開いたときに検出・同期します。初回ははじめにタブの状態チェックに沿って進めてください。
+		</p>
 	</div>
 </section>
 
@@ -353,16 +349,39 @@
 		padding: 18px;
 	}
 
-	.feature h3 {
+	.feature h3,
+	.use-case h3 {
 		margin-bottom: 10px;
 		font-size: 1.08rem;
 	}
 
 	.feature p,
+	.use-case p,
 	.note p {
 		margin-bottom: 0;
 		color: #514c45;
 		line-height: 1.75;
+	}
+
+	.use-case {
+		padding: 18px;
+	}
+
+	.more-link,
+	.workflow-note {
+		margin: 18px 0 0;
+		color: #514c45;
+		line-height: 1.7;
+	}
+
+	.more-link a {
+		color: #0f6e36;
+		font-weight: 900;
+		text-decoration: none;
+	}
+
+	.more-link a:hover {
+		text-decoration: underline;
 	}
 
 	.workflow {
