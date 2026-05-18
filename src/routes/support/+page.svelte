@@ -151,6 +151,7 @@
 				<li>表示中の組織名</li>
 				<li>拡張バージョン</li>
 				<li>内容</li>
+				<li>自己診断結果</li>
 				<li>返信先メールアドレス 任意</li>
 			</ul>
 			<a class="button primary" href={supportFormUrl} target="_blank" rel="noreferrer">
