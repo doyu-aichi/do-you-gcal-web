@@ -59,6 +59,10 @@
 		{
 			question: 'スマートフォンで使えますか？',
 			answer: '使えません。PC 版 Chrome または Microsoft Edge を対象にしています。Edge では Chrome Web Store の拡張機能を許可してからインストールしてください。'
+		},
+		{
+			question: '拡張アイコンは固定した方がよいですか？',
+			answer: 'よく使う場合は、Do You Gcal の拡張アイコンを Chrome ツールバーに固定してください。Chrome のサイドパネルを使う場合、同友会サイト上で拡張アイコンから開く導線が分かりやすくなります。'
 		}
 	];
 </script>
